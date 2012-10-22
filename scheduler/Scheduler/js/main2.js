@@ -33,8 +33,12 @@ requirejs.config({
 			deps: ['js/lib/jquery-1.7.2.min.js']
 		},
 		'/_/js/core.js': {
-			deps: ['js/lib/jquery-1.7.2.min.js'],
+			deps: ['js/lib/jquery-1.7.2.min.js', '/_/js/oauth.js'],
 			exports: 'UWAP'
+		},
+		'/_/js/oauth.js': {
+			deps: ['js/lib/jquery-1.7.2.min.js'],
+			exports: 'oauth'
 		}
 
 	}
